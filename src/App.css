@@ -1,0 +1,13 @@
+/* Custom thin, transparent scrollbar for friends list */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(120, 144, 156, 0.15);
+  border-radius: 4px;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120,144,156,0.15) transparent;
+}

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120,120,120,0.2) transparent;
+}
+.custom-thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-thin-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(120,120,120,0.2);
+  border-radius: 6px;
+}
+.custom-thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-tablet: 40rem;
+    --breakpoint-laptop: 64rem;
+    --breakpoint-desktop: 80rem;
+}
