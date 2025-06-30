@@ -80,6 +80,7 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
   };
 
   const handleShare = (id: number) => {
+    console.log("Sharing post with id:", id);
     if (navigator.share) {
       navigator.share({
         title: 'Check out this post',

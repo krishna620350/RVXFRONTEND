@@ -1,18 +1,10 @@
 import React from "react";
-import { FiBell, FiX } from "react-icons/fi";
 
 export interface NotificationProps {
   message: string;
   type?: "success" | "error" | "info" | "warning";
   onClose?: () => void;
 }
-
-const typeStyles: Record<string, string> = {
-  success: "bg-green-600 text-white",
-  error: "bg-red-600 text-white",
-  info: "bg-blue-600 text-white",
-  warning: "bg-yellow-500 text-gray-900",
-};
 
 const Notification: React.FC<NotificationProps> = ({
   message,
